@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
-const dbPath = path.resolve(__dirname, 'db/esv.sqlite3')
+const dbPath = path.resolve(__dirname, 'db/cnvs.sqlite3')
 
 let db = new sqlite3.Database(dbPath, (err) => {
   if (err) {

@@ -7,12 +7,16 @@
     <link rel='stylesheet' href='/stylesheets/main.css' />
   </head>
   <body>
-    <div class="post container main">
-      <h1><%= book %> <%= chapterNumber %></h1>
-      <div class="row col-md-8 offset-md-3">
-        <% chapters.forEach(function(chapter) { %>
-          <%- chapter %> <br />
-        <% }); %>
+    <div class="container main">
+      <div class="row">
+        <div class="col-md-3 Offset-md-1">
+         <h1><%= book %> <%= chapterNumber %></h1>
+        </div>
+        <div class="col-md-8">
+          <% chapters.forEach(function(chapter) { %>
+            <%- chapter %> <br />
+          <% }); %>
+        </div>
       </div>
     </div>
   </body>
